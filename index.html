@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Marco Guarnera">
-    <meta name="description" content="Layout">
+    <meta name="description" content="Discord">
     <!-- Title -->
-    <title>Layout</title>
+    <title>Discord</title>
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <!-- File CSS -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
@@ -15,46 +17,97 @@
     <!-- Main Header -->
     <header id="main-header">
         <div class="container">
-            <nav class="main-header-navbar flex">
-                <div class="left-column"></div>
-                <div class="center-column"></div>
-                <div class="right-column"></div>
+            <nav class="navbar flex">
+                <div class="column-left">
+                    <img src="img/logo.svg" alt="Discord">
+                </div>
+                <div class="column-center">
+                    <ul class="flex">
+                        <li><a href="#">Scarica</a></li>
+                        <li><a href="#">Perché Discord</a></li>
+                        <li><a href="#">Nitro</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Assistenza</a></li>
+                    </ul>
+                </div>
+                <div class="column-right">
+                    <a class="btn-small btn-light" href="#">Accedi</a>
+                </div>
             </nav>
-            <div class="main-content flex">
-                <section class="content"></section>
-            </div>
         </div>
+            <div class="jumbotron flex">
+                <section class="content">
+                    <h1>Il tuo posto per parlare</h1>
+                    <p>Che tu faccia parte di un club scolastico, gruppo di gamer, comunità
+                       artistica mondiale, o semplicemente di un piccolo gruppo di amici che
+                       vuole passare il tempo assieme, Discord rende più facile chiacchierare
+                       ogni giorno e ritrovarsi più spesso.</p>
+                    <a class="btn btn-light" href="#"><i class="fa-solid fa-down-long"></i> Scarica per Mac</a>
+                    <a class="btn btn-dark" href="#">Apri Discord nel tuo browser</a>
+                </section>
+            </div>
     </header>
     <!-- Main -->
     <main>
         <div class="bg-white">
             <div class="container">
                 <section class="separate-section flex">
-                    <div class="large-column"></div>
-                    <div class="small-column"></div>
+                    <div class="large-column">
+                        <img src="img/item01.svg" alt="item01">
+                    </div>
+                    <div class="small-column">
+                        <h2>Un luogo a invito con tutto lo spazio necessario per parlare</h2>
+                        <p>I server Discord sono organizzati in canali tematici in cui
+                           puoi collaborare, condividere o semplicemente parlare della
+                           tua giornata senza intasare una chat di gruppo.</p>
+                    </div>
                 </section>
             </div>
         </div>
         <div class="bg-grey">
             <div class="container">
                 <section class="separate-section flex reverse">
-                    <div class="large-column"></div>
-                    <div class="small-column"></div>
+                    <div class="large-column">
+                        <img src="img/item02.svg" alt="item02">
+                    </div>
+                    <div class="small-column">
+                        <h2>Dove trovarsi é facile</h2>
+                        <p>Mettiti comodo in un canale vocale quando hai tempo. Gli amici
+                           nel tuo server posso vedere che sei lì e unirsi istantaneamente
+                           senza dover chiamare.</p>
+                    </div>
                 </section>
             </div>
         </div>
         <div class="bg-white">
             <div class="container">
                 <section class="separate-section flex">
-                    <div class="large-column"></div>
-                    <div class="small-column"></div>
+                    <div class="large-column">
+                        <img src="img/item03.svg" alt="item03">
+                    </div>
+                    <div class="small-column">
+                        <h2>Da pochi a un fandom</h2>
+                        <p>Dai inizio a una community di qualsiasi dimensione con strumenti
+                           di moderazione e accesso ai membri personalizzabile. Concedi ai
+                           membri poteri speciali, crea canali privati, e molto altro.
+                        </p>
+                    </div>
                 </section>
             </div>
         </div>
         <div class="bg-grey">
             <div class="container">
                 <section class="full-section flex">
-                    <div class="full-column"></div>
+                    <div class="full-column">
+                        <h2>Tecnologia affidabile per tenersi in contatto</h2>
+                        <p>Video e audio a bassa latenza ti faranno sentire come se foste
+                           tutti nella stessa stanza. Fai ciao in video, guarda gli amici
+                           giocare in streaming, o riunitevi in una sessione di disegno
+                           con la condivisione schermo.</p>
+                        <img src="img/item04.svg" alt="item04">
+                        <p>Pronto a iniziare la tua avventura?</p>
+                        <button>Scarica per Mac</button>
+                    </div>
                 </section>
             </div>
         </div>

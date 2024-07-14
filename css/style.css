@@ -5,40 +5,98 @@
     padding: 0;
 }
 
+/* Generics */
+a {
+    color: #FFF;
+    display: inline-block;
+    text-decoration: none;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    font-size: 46px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* Main Header */
 #main-header {
-    min-height: 500px;
-    background-color: #3161E0;
+    color: #FFF;
+    background-image: url(../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-.main-header-navbar {
-    min-height: 80px;
+#main-header .navbar {
+    min-height: 75px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.left-column {
+.column-left {
     flex-basis: 20%;
 }
 
-.center-column {
+.column-center {
     flex-basis: 60%;
 }
 
-.right-column {
+.column-right {
     flex-basis: 20%;
+    text-align: right;
 }
 
-.main-header-navbar > * {
-    min-height: 40px;
+.column-center > ul {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
 }
 
-.main-content {
-    min-height: 420px;
+.jumbotron {
+    min-height: 425px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .content {
-    min-height: 340px;
-    flex-basis: 100%;
+    flex-basis: 50%;
+    text-align: center;
 }
+
+.content > a {
+    margin-right: 15px;
+}
+
+.content > p {
+    line-height: 25px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+
 
 .separate-section {
     min-height: 500px;
@@ -107,18 +165,31 @@
 
 .flex {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 .flex.reverse {
     flex-direction: row-reverse;
 }
 
-.flex * {
-    border: 2px solid #000;
-    background-color: orangered;
+/* Buttons */
+.btn {
+    padding: 15px 25px;
+    border-radius: 25px;
+}
+
+.btn-small {
+    padding: 5px 15px;
+    border-radius: 15px;
+}
+
+.btn-dark {
+    color: #FFF;
+    background-color: #000;
+}
+
+.btn-light {
+    color: #000;
+    background-color: #FFF;
 }
 
 .bg-white {
